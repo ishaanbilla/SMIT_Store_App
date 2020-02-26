@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/image"
+            android:layout_gravity="center"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harsh Kumar Sharma"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:text="7007344814"/>
+
+
+
+
+        <Button
+            android:id="@+id/you_button_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Orders"
+            android:background="@drawable/buttonround"
+            android:textColor="#000"
+            android:drawableTint="#000"
+            android:textSize="17sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/outline_keyboard_arrow_right_white_18dp"
+            android:drawablePadding="30dp"
+            android:drawableLeft="@drawable/myorders"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/account_logout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Logout"
+            android:background="@drawable/buttonround"
+            android:textColor="#000"
+            android:drawableTint="#000"
+            android:textSize="17sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:drawableRight="@drawable/outline_keyboard_arrow_right_white_18dp"
+            android:drawablePadding="30dp"
+            android:drawableLeft="@drawable/logout"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomnav"
+        app:menu="@menu/bottomnavi"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="#ffff"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="#fff"
+        android:background="@color/cardview_dark_background">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

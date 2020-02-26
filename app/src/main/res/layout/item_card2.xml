@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/card_relative_layout">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/card_image"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/card_price_layout"
+            android:layout_marginLeft="20sp"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/card_image">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+
+                android:text="₹"
+                />
+
+            <TextView
+                android:id="@+id/card_price"
+                android:layout_marginLeft="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+
+                android:text="100"
+                />
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card_image"
+            android:layout_below="@+id/card_price_layout"
+            android:layout_marginLeft="20dp"
+            android:text="KissanFresh Tomato ketchup"
+            android:textStyle="normal"
+            android:textColor="#000"
+            android:id="@+id/card_name"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card_image"
+            android:layout_below="@+id/card_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Unit"
+            android:id="@+id/card_unit"
+            android:textStyle="normal"
+            android:textColor="#E6000000"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/card_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:text="-"
+                android:textSize="17sp"
+                android:textColor="#fff"
+                android:visibility="visible"
+                android:id="@+id/card_button_minus"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonround4"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="1"
+              android:visibility="visible"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:id="@+id/quatity_number"
+                android:textColor="#000"
+                />
+
+
+
+            <Button
+                android:layout_width="0dp"
+                android:text="+"
+                android:textSize="17sp"
+                android:textColor="#fff"
+                android:id="@+id/card_button_plus"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonround2"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

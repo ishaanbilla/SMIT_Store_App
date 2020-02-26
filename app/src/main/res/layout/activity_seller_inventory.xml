@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller_inventory"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F57C00">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="#fff"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="20dp"
+                android:hint="Search"
+
+                android:inputType="text"
+                android:paddingLeft="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/seller_inventory_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_above="@+id/order"
+            android:layout_below="@+id/bill"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="1dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+
+
+
+</LinearLayout>

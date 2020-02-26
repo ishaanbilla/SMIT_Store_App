@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dashboard_recycler"
+        android:layout_marginLeft="10dp"
+    android:layout_below="@+id/search"
+    android:layout_above="@+id/bottomnav"
+    >
+
+
+
+
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FF424242"
+        android:id="@+id/search">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Category"
+            android:textSize="15sp"
+            android:background="@drawable/buttonround3"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Search"
+                android:layout_height="35sp"
+                android:background="#fff"
+                android:drawableStart="@drawable/search"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+
+                android:id="@+id/login_edittext_password"
+                android:drawablePadding="20dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomnav"
+        app:menu="@menu/bottomnavi"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="#ffff"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="#fff"
+        android:background="@color/cardview_dark_background">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

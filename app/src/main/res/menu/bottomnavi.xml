@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/store"
+        android:icon="@drawable/store"
+        android:title="Store"
+       />
+
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@drawable/wishlist"
+        android:title="Wishlist"/>
+
+
+    <item
+        android:id="@+id/cart"
+        android:title="Cart"
+        android:icon="@drawable/cart"/>
+
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/account"
+        android:title="Account"/>
+
+
+
+
+
+<!--    <item-->
+<!--        android:icon="@drawable/you"-->
+<!--        android:id="@+id/you"-->
+<!--        android:title="You"/>-->
+
+
+
+
+
+
+</menu>

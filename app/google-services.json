@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131279962674",
+    "firebase_url": "https://smit-store-app.firebaseio.com",
+    "project_id": "smit-store-app",
+    "storage_bucket": "smit-store-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131279962674:android:3d0e184334c6f42a77f22b",
+        "android_client_info": {
+          "package_name": "com.e.thesmitstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131279962674-qqikv8uoplbqgqqsah2c09nn06f7lgaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.thesmitstore",
+            "certificate_hash": "ee49aff1e4226f1184bd8685187452e6130d8d44"
+          }
+        },
+        {
+          "client_id": "131279962674-su2p46tenvcitjaq02knc3p9jgd5gl4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQE2AlWWglqPfsYMAE3AXKp32x3sFdsps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131279962674-su2p46tenvcitjaq02knc3p9jgd5gl4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

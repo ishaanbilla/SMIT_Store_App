@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/order"
+        android:layout_below="@+id/bill"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="1dp">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15sp"
+        android:background="@drawable/border"
+        android:id="@+id/bill">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text="M.R.P"/>
+
+
+            <TextView
+                android:id="@+id/cart_textview_mrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text=""/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:text="Delivery charges"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:textAlignment="textEnd"
+                android:textSize="16sp"
+                android:text="FREE"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="TOTAL"/>
+
+
+            <TextView
+                android:id="@+id/cart_textview_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:text=""/>
+
+        </LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomnav"
+        app:menu="@menu/bottomnavi"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="#ffff"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="#fff"
+        android:background="@color/cardview_dark_background">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonround4"
+        android:layout_above="@id/bottomnav"
+        android:text="Check out"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:id="@+id/order"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
